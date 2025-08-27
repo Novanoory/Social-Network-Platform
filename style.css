@@ -1,0 +1,381 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+}
+
+/* Header / Navbar */
+header {
+  background: rgb(228, 54, 170);
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+    margin-left: 58px;
+}
+
+/* Notification Bell */
+.bell {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+  margin-right: 23px;
+}
+#notif-count {
+  background: red;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 50%;
+  font-size: 0.9rem;
+}
+.logo{
+    font-size: 22px;
+    font-weight: bold;
+}
+/* Layout Containers */
+.container {
+  display: flex;
+  
+}
+.sidebar {
+  width: 20%;
+  background: white;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+.feed {
+  width: 60%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+#friendSearch{
+    width: 90%;
+    padding: 5px;
+    border-radius: 7px;
+}
+ .profile img{
+    width: 200px;
+    border-radius: 50%;
+}
+
+
+/* Composer & Posts */
+/* POST INPUT */
+.postbox-container {
+    box-sizing: border-box;
+  background: white;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-top: 20px;
+  margin-bottom: 20px;
+/*  max-width: 600px;*/
+width: 100%;
+/*  margin: 0 auto 20px auto;*/
+}
+
+.postbox-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.postbox-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#postbox-text {
+  flex: 1;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.postbox-post-btn {
+  background-color: rgb(228, 54, 170);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#postbox-file {
+  margin-top: 10px;
+}
+
+#postbox-preview {
+  margin-top: 10px;
+  max-width: 100%;
+  border-radius: 10px;
+  display: none;
+}
+
+/* POST CARD */
+.postbox-card {
+  background: white;
+ /* max-width: 600px;
+  margin: 0 auto 20px auto;*/
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  width:100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  
+}
+
+.postbox-header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  gap: 10px;
+}
+
+.postbox-header img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.postbox-userinfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.postbox-userinfo h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.postbox-userinfo span {
+  font-size: 12px;
+  color: gray;
+}
+
+.postbox-image {
+  width: 100%;
+  height: auto;
+  max-height: 100px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.postbox-actions {
+  display: flex;
+  justify-content: space-center;
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+  margin-left: 20px;
+  
+}
+
+.postbox-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  color: #555;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.postbox-actions button i {
+  font-size: 16px;
+}
+
+.postbox-actions button:hover {
+  color: rgb(228, 54, 170);
+}
+.postbox-input button{
+    width: 70px;
+}
+.postbox-input button:hover{
+    
+      background-color: rgb(228, 54, 170);
+      color: white;
+
+}
+
+/*sidebar setting btn*/
+.profile button{
+    padding: 5px;
+    border-radius: 5px;
+    width:30%;
+    color: black;
+    background-color: white;
+}
+
+/*input btn*/
+ input[type="file"]::-webkit-file-upload-button {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+
+input[type="file"]::file-selector-button {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  margin-top: 5px;
+}
+/*post btn*/
+button {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  margin-top: 5px;
+  width:8%;
+}
+button:hover{
+    background-color:aliceblue;
+}
+/*story side*/
+.stories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 10px;
+  overflow-x: auto;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  margin: px;
+}
+
+.story {
+  flex: 0 0 auto;
+  text-align: center;
+  width: 70px;
+}
+
+.story img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #d6249f;
+  padding: 2px;
+}
+
+.story p {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #333;
+}
+/*right side section*/
+.friend-requests-section {
+  margin-top: 10px;
+  padding: 10px;
+  background: #f4f4f4;
+  border-radius: 10px;
+  
+
+}
+
+.friend-requests-section h3 {
+    margin-top: -5px;
+  font-size: 18px;
+  color:black;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.request-card {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  margin-bottom: 15px;
+  
+}
+
+.request-card img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  margin-top: -40px;
+}
+
+.request-info {
+  flex: 1;
+}
+
+.request-info h4 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.request-info p {
+  margin: 5px 0;
+  font-size: 12px;
+  color: #666;
+}
+
+.request-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+  margin-right: 40px;
+}
+
+.accept-btn {
+  background-color: rgb(228, 54, 170);
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  width: 100px;
+}
+
+.ignore-btn {
+  background-color: #e0e0e0;
+  color: #333;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  width: 100px;
+}
+.accept-btn:hover{
+    background-color: rgb(228, 54, 170);
+    color: white;
+} 
+.ignore-btn:hover{
+   background-color: #e0e0e0;
+  color: #333; 
+}
+
+/*req side sty;ing of btns*/
+.request-buttons button {
+  min-width: 90px; /* consistent width */
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+
+.accept-btn i {
+  margin-right: 5px;
+}

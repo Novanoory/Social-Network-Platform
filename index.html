@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatify</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="./style.css" rel="stylesheet">
+
+</head>
+<body>
+     <header>
+    <div class="logo">Chatify</div>
+    <div id="notifications"><span class="bell">🔔</span><span id="notif-count">3</span></div>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar left">
+      <div class="profile">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.Kk4i-k-7bOfsgPv0SJtj5AHaHa?pid=Api&P=0&h=220" alt="Profile">
+        <h2>John Doe</h2>
+        <button onclick="openSettings()">Settings</button>
+      </div>
+    </aside>
+
+    <main class="feed">
+        <section class="stories">
+  <div class="story">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.nlrgll73EWR6Bkf8hsab8gHaEK?pid=Api&P=0&h=220" alt="Your Story">
+    <p>Your Story</p>
+  </div>
+  <div class="story">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.g4h2N4K9K05pgVlX7vG6mAHaHa?pid=Api&P=0&h=220" alt="Lila Jameel">
+    <p>Lila Jameel</p>
+  </div>
+  <div class="story">
+    <img src="https://tse2.mm.bing.net/th/id/OIP.775abR6IXSRNeADj6cXU8AHaHa?pid=Api&P=0&h=220" alt="Winnie Hale">
+    <p>Winnie Hale</p>
+  </div>
+  <div class="story">
+    <img src="https://tse2.mm.bing.net/th/id/OIP.N-M4zn64NbaQJB-HUoazFgHaHa?pid=Api&P=0&h=220" alt="Daniel Bale">
+    <p>Daniel Bale</p>
+  </div>
+  <div class="story">
+    <img src="https://tse2.mm.bing.net/th/id/OIP.wDmI2WDLoJR71xxZcUy60QHaHa?pid=Api&P=0&h=220" alt="Jane Doe">
+    <p>Jane Doe</p>
+  </div>
+  <div class="story">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.U1xTlpT5sJZDnS_noKGDfQHaEK?pid=Api&P=0&h=220" alt="Tina White">
+    <p>Tina White</p>
+  </div>
+</section>
+
+      
+  <!-- POST INPUT SECTION -->
+<section class="postbox-container">
+  <div class="postbox-input">
+    <img class="postbox-avatar" src="https://tse4.mm.bing.net/th/id/OIP.Kk4i-k-7bOfsgPv0SJtj5AHaHa?pid=Api&P=0&h=220" alt="User">
+    <input type="text" id="postbox-text" placeholder="What's on your mind, John?" />
+    <button onclick="createPost()" class="postbox-post-btn">Post</button>
+  </div>
+  <input type="file" id="postbox-file" accept="image/*" />
+  <img id="postbox-preview" />
+</section>
+
+<!-- POSTS FEED SECTION -->
+<section id="postbox-feed"></section>
+
+
+    </main>
+
+  <section class="friend-requests-section">
+  <h3>Requests</h3>
+  <div id="pendingList">
+    <div class="request-card">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.OuoVMa0KZz3xRFvfdy-rNQHaHa?pid=Api&P=0&h=220" alt="Avatar">
+      <div class="request-info">
+        <h4>Hajia Bintu</h4>
+        <p>6 mutual friends</p>
+        <div class="request-buttons">
+          <button class="accept-btn">Accept</button>
+          <button class="ignore-btn">Ignore</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="request-card">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.CEoPinByK2N8o8wtbapM_AHaE7?pid=Api&P=0&h=220" alt="Avatar">
+      <div class="request-info">
+        <h4>Clare</h4>
+        <p>2 mutual friends</p>
+        <div class="request-buttons">
+          <button class="accept-btn">Accept</button>
+          <button class="ignore-btn">Ignore</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="request-card">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.9k_GOA2TNHH70WjDdav4owAAAA?pid=Api&P=0&h=220" alt="Avatar">
+      <div class="request-info">
+        <h4>Hana</h4>
+        <p>5 mutual friends</p>
+        <div class="request-buttons">
+          <button class="accept-btn">Accept</button>
+          <button class="ignore-btn">Ignore</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  </div>
+    
+
+<script src="./script.js" defer></script>
+
+
+    
+  </script>
+</body>
+</html>
